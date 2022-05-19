@@ -1,6 +1,6 @@
-## Concept
+## Portfolio
 
-Voici un template déjà configuré pour vos projets front-end.
+Welcome to my portfolio !
 
 ## Setup & Use
 
