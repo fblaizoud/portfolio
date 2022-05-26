@@ -1,0 +1,210 @@
+.skills {
+  background: $background-primary;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    font-family: "Poppins", sans-serif;
+    &__title {
+      display: flex;
+      justify-content: center;
+      span {
+        color: $secondary-color;
+        font-size: 30px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 8px;
+      }
+      span::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $primary-color;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &__details {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__text {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        &__left {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          &__topic {
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0;
+          }
+          p {
+            width: 45%;
+            padding-bottom: 1rem;
+            line-height: 1.5rem;
+            color: $secondary-color;
+          }
+        }
+        &__right {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          perspective: 200px;
+        }
+      }
+      &__boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        &__box {
+          margin: 20px 0;
+          width: calc(100% / 3 - 20px);
+          text-align: center;
+          border-radius: 12px;
+          padding: 30px 10px;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+          cursor: default;
+          transition: all 0.4s ease;
+          &__topic {
+            color: $secondary-color;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+          &__icon {
+            i {
+              height: 50px;
+              width: 50px;
+              background-color: $primary-color;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 50px;
+              font-size: 18px;
+              color: $white-color;
+              margin: 0 auto 10px auto;
+              transition: all 0.4s ease;
+            }
+          }
+          &:hover {
+            background: $primary-color;
+            i {
+              background: $white-color;
+              color: $primary-color;
+            }
+            div {
+              color: $white-color;
+              transition: all 0.4s ease;
+            }
+            p {
+              color: $white-color;
+              transition: all 0.4s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .skills {
+    &__content {
+      width: 85%;
+      &__details {
+        justify-content: space-between;
+        padding-bottom: 20px;
+        &__text {
+          &__left {
+            align-items: center;
+            gap: 10px;
+            &__topic {
+              text-align: center;
+              padding-top: 3vh;
+            }
+            p {
+              width: 100%;
+              text-align: justify;
+            }
+          }
+          &__right {
+            justify-content: center;
+          }
+        }
+        &__boxes {
+          &__box {
+            padding: 15px 10px;
+            &__topic {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .skills {
+    &__content {
+      padding-top: 70px;
+      &__title {
+        width: 100vw;
+        justify-content: flex-start;
+        span {
+          font-size: 25px;
+          padding-left: 10vw;
+          &::before {
+            height: 3px;
+            width: 100%;
+            background: $primary-color;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      &__details {
+        justify-content: flex-start;
+        padding: 0;
+        &__text {
+          &__left {
+            gap: 0;
+            &__scroll {
+              overflow: scroll;
+              height: 35vh;
+            }
+            &__topic {
+              font-size: 20px;
+            }
+            p {
+              font-size: 0.8em;
+            }
+          }
+        }
+        &__boxes {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$primary-color: rgb(74, 68, 92);
+// rgb(74, 68, 92)
+// rgba(9, 5, 31, 0.654) transparent equivalent
+$secondary-color: #e5e5e5;
+$white-color: #fff;
+$hover-color: rgb(29, 26, 45);
+$background-primary: linear-gradient(
+    296.82deg,
+    rgba(225, 129, 129, 0.3) 16.54%,
+    rgba(193, 110, 110, 0.271053) 35.22%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  #bfc9dc;
+$background-secondary: linear-gradient(
+    243.18deg,
+    rgba(225, 129, 129, 0.3) 16.54%,
+    rgba(193, 110, 110, 0.271053) 35.22%,
+    rgba(0, 0, 0, 0) 100%
+  ),
+  #bfc9dc;

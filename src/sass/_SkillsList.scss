@@ -1,0 +1,169 @@
+.list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.list {
+  li {
+    position: absolute;
+    top: -330px;
+    left: -450px;
+  }
+  .html5 {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    -webkit-transform: scale(7.5, 7.8) translate(1.18em, 0.68em);
+    -moz-transform: scale(7.5, 7.8) translate(1.18em, 0.68em);
+    transform: scale(7.5, 7.8) translate(1.18em, 0.68em);
+  }
+  .javascript {
+    letter-spacing: -0.04em;
+    font-weight: 400;
+    -webkit-transform: scale(1.4) rotate(90deg) translate(3.88em, -13.2em);
+    -moz-transform: scale(1.4) rotate(90deg) translate(3.88em, -13.2em);
+    transform: scale(1.4) rotate(90deg) translate(3.88em, -13.2em);
+  }
+  .accessibility {
+    letter-spacing: -0.05em;
+    font-weight: 300;
+    -webkit-transform: scale(1.4, 1.33) rotate(90deg) translate(4.1em, -18.2em);
+    -moz-transform: scale(1.4, 1.33) rotate(90deg) translate(4.1em, -18.2em);
+    transform: scale(1.4, 1.33) rotate(90deg) translate(4.1em, -18.2em);
+  }
+  .responsive {
+    font-weight: 300;
+    width: 95px;
+    letter-spacing: -0.03em;
+    word-spacing: 0.3em;
+    -webkit-transform: scale(2) translate(2.12em, 5.14em);
+    -moz-transform: scale(2) translate(2.12em, 5.14em);
+    transform: scale(2) translate(2.12em, 5.14em);
+  }
+  .reactjs {
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    -webkit-transform: scale(2.85, 3) translate(7.14em, 3.55em);
+    -moz-transform: scale(2.85, 3) translate(7.14em, 3.55em);
+    transform: scale(2.85, 3) translate(7.14em, 3.55em);
+  }
+  .dom {
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    -webkit-transform: scale(2.4, 2.3) rotate(90deg) translate(6em, -5.8em);
+    -moz-transform: scale(2.4, 2.3) rotate(90deg) translate(6em, -5.8em);
+    transform: scale(2.4, 2.3) rotate(90deg) translate(6em, -5.8em);
+  }
+
+  .css3 {
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    -webkit-transform: scale(6.8, 6.75) rotate(90deg) translate(1.32em, -4.54em);
+    -moz-transform: scale(6.8, 6.75) rotate(90deg) translate(1.32em, -4.54em);
+    transform: scale(6.8, 6.75) rotate(90deg) translate(1.32em, -4.54em);
+  }
+
+  .mysql {
+    letter-spacing: 0.045em;
+    font-weight: 700;
+    -webkit-transform: scale(3.88, 3.8) translate(5.42em, 3.72em);
+    -moz-transform: scale(3.88, 3.8) translate(5.42em, 3.72em);
+    transform: scale(3.88, 3.8) translate(5.42em, 3.72em);
+  }
+
+  .objectoriented {
+    font-weight: 700;
+    width: 95px;
+    letter-spacing: -0.01em;
+    -webkit-transform: scale(1.85, 1.9) translate(1.86em, 6.5em);
+    -moz-transform: scale(1.85, 1.9) translate(1.86em, 6.5em);
+    transform: scale(1.85, 1.9) translate(1.86em, 6.5em);
+  }
+
+  .wordpress {
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    -webkit-transform: scale(2.75, 3) translate(1.72em, 4.95em);
+    -moz-transform: scale(2.75, 3) translate(1.72em, 4.95em);
+    transform: scale(2.75, 3) translate(1.72em, 4.95em);
+  }
+
+  .git {
+    font-weight: 300;
+    letter-spacing: -0.07em;
+    -webkit-transform: scale(3.9, 4) translate(6.05em, 0.95em);
+    -moz-transform: scale(3.9, 4) translate(6.05em, 0.95em);
+    transform: scale(3.9, 4) translate(6.05em, 0.95em);
+  }
+
+  .tailwind {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    -webkit-transform: scale(2) translate(2.28em, 8.58em);
+    -moz-transform: scale(2) translate(2.28em, 8.58em);
+    transform: scale(2) translate(2.28em, 8.58em);
+  }
+
+  .webstandards {
+    font-weight: 300;
+    width: 95px;
+    letter-spacing: 0em;
+    word-spacing: 0.1em;
+    -webkit-transform: scale(2) translate(12.7em, 8.6em);
+    -moz-transform: scale(2) translate(12.7em, 8.6em);
+    transform: scale(2) translate(12.7em, 8.6em);
+  }
+
+  .fb {
+    color: $white-color;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    -webkit-transform: scale(3.4) translate(7.03em, 2.15em);
+    -moz-transform: scale(3.4) translate(7.03em, 2.15em);
+    transform: scale(3.4) translate(6.9em, 2.15em);
+  }
+
+  .skillsfb {
+    color: $white-color;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    -webkit-transform: scale(1.8) translate(9.95em, 9.55em);
+    -moz-transform: scale(1.8) translate(9.95em, 9.55em);
+    transform: scale(1.8) translate(9.7em, 9.55em);
+  }
+}
+
+@media (min-width: 1300px) {
+  .list {
+    li {
+      top: -320px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .list {
+    li {
+      top: -30px;
+      left: -230px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .skillslist {
+    transform: scale(0.55);
+    .list {
+      li {
+        top: 50px;
+        left: -230px;
+      }
+    }
+  }
+}

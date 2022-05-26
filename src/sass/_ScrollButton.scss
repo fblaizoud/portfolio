@@ -1,0 +1,12 @@
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: $white-color;
+  background: $primary-color;
+  padding: 10px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
