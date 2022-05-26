@@ -58,7 +58,7 @@ const ProjectsList = () => {
         <img
           className="neumorphic-image"
           height="300"
-          src="/assets/oh my quote.jpg"
+          src="./assets/oh my quote.jpg"
           alt="quote"
         />
         <div className="text">
@@ -83,7 +83,7 @@ const ProjectsList = () => {
         <img
           className="neumorphic-image"
           height="300"
-          src="/assets/green my mind.jpg"
+          src="./assets/green my mind.jpg"
           alt="ecology"
         />
         <div className="text">
@@ -106,7 +106,7 @@ const ProjectsList = () => {
         <img
           className="neumorphic-image"
           height="300"
-          src="/assets/petite amour.jpg"
+          src="./assets/petite amour.jpg"
           alt="jewelry"
         />
         <div className="text">

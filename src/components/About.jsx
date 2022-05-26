@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className="about__content__details">
           <div className="about__content__details__left">
-            <img id="logo" src="/assets/fb.jpg" alt="avatar" />
+            <img id="logo" src="./assets/fb.jpg" alt="avatar" />
           </div>
           <div className="about__content__details__right">
             <div className="about__content__details__right__topic">
@@ -46,7 +46,7 @@ const About = () => {
                 have a strong appetite for new technologies.
               </p>
             </div>
-            <ButtonFb link="/assets/fb.pdf" text="Download CV" />
+            <ButtonFb link="./assets/fb.pdf" text="Download CV" />
           </div>
         </div>
       </div>
