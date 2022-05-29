@@ -38,24 +38,28 @@ const Contact = () => {
           </div>
           {!finalName ? (
             <div className="contact__content__text__form">
-              <form onSubmit={() => setFinalName(name)}>
+              <form>
                 <div className="contact__content__text__form__outer">
                   <div className="contact__content__text__form__outer__inner">
                     <div>What&apos;s your name ?</div>
                     <input
                       className="finder__iput"
-                      id="name"
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
-                    <button type="submit">Submit</button>
+                    <a href="#thanks" onClick={() => setFinalName(name)}>
+                      Submit
+                    </a>
                   </div>
                 </div>
               </form>
             </div>
           ) : (
-            <div className="contact__content__text__thanks">{`Thank you for your visit ${finalName}. Have a nice day 🙂`}</div>
+            <div
+              id="thanks"
+              className="contact__content__text__thanks"
+            >{`Thank you for your visit ${finalName}. Have a nice day 🙂`}</div>
           )}
         </div>
         <span>

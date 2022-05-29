@@ -9,7 +9,6 @@ const Home = () => {
           <div className="home__content__text__text-two">
             <Logo />
           </div>
-          <div className="text-three" />
         </div>
       </div>
     </header>

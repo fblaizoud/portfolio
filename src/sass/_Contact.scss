@@ -104,10 +104,11 @@
               color: $secondary-color;
               font-weight: 700;
             }
-            > button {
+            > a {
               padding: 5px;
               background: transparent;
               color: $secondary-color;
+              font-weight: 900;
               text-align: end;
               &:hover {
                 color: $primary-color;
@@ -196,5 +197,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 751px) and (max-height: 900px) {
+  .contact {
+    height: 160vh;
   }
 }
