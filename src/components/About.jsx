@@ -15,7 +15,7 @@ const About = () => {
           </div>
           <div className="about__content__details__right">
             <div className="about__content__details__right__topic">
-              Welcome on my Portfolio !
+              Welcome to my Portfolio !
             </div>
             <div className="about__content__details__right__scroll">
               <p>

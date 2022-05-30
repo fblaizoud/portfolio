@@ -105,7 +105,7 @@ nav .menu-btn,
 
 // RESPONSIVE
 
-@media (max-width: 750px) {
+@media all and (max-width: 750px) {
   nav {
     padding: 10px 0;
     .navbar {

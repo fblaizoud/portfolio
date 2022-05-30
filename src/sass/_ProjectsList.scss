@@ -1,12 +1,12 @@
 .neumorphic-tab-container {
   display: flex;
   flex-direction: column;
-  box-shadow: -8px -8px calc(8px * 2) 0 rgba(224, 229, 238, 0.43),
-    8px 8px calc(8px * 2) 0 rgba(34, 44, 62, 0.207);
+  box-shadow: -8px -8px 16px 0 rgba(224, 229, 238, 0.43),
+    8px 8px 16px 0 rgba(34, 44, 62, 0.207);
   border-radius: 30px;
   padding: 48px;
   width: 100%;
-  height: 90%;
+  height: 70%;
   &__controls {
     display: flex;
     align-items: center;
@@ -54,31 +54,33 @@
   }
   &__tab_inactive {
     display: none;
-    box-shadow: inset -8px -8px calc(8px * 2) 0 rgba(224, 229, 238, 0.43),
-      inset 8px 8px calc(8px * 2) 0 rgba(34, 44, 62, 0.207);
+    box-shadow: inset -8px -8px 16px 0 rgba(224, 229, 238, 0.43),
+      inset 8px 8px 16px 0 rgba(34, 44, 62, 0.207);
     border-radius: 10px;
     padding: 20px;
   }
   &__tab_active {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 90%;
-    box-shadow: inset -8px -8px calc(8px * 2) 0 rgba(224, 229, 238, 0.43),
-      inset 8px 8px calc(8px * 2) 0 rgba(34, 44, 62, 0.207);
+    box-shadow: inset -8px -8px 16px 0 rgba(224, 229, 238, 0.43),
+      inset 8px 8px 16px 0 rgba(34, 44, 62, 0.207);
     border-radius: 10px;
     padding: 20px;
   }
   .neumorphic-image {
     border-radius: 10px;
-    width: 40vw;
-    height: 25vw;
+    width: 50%;
+    height: auto;
+    max-height: 90%;
   }
   .text {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 100%;
     h2 {
       color: $white-color;
       align-self: flex-start;
@@ -96,18 +98,19 @@
 
 // RESPONSIVE
 
-@media (max-width: 1050px) {
+@media all and (max-width: 1050px) {
   .neumorphic-tab-container {
     align-items: center;
+    height: 90%;
     &__tab_active {
       flex-direction: column;
-      align-items: center;
       justify-content: space-around;
     }
     .neumorphic-image {
       border-radius: 10px;
-      width: 90%;
-      height: fit-content;
+      width: 80%;
+      height: auto;
+      max-height: 60%;
     }
     .text {
       padding-top: 10px;
@@ -118,9 +121,10 @@
   }
 }
 
-@media (max-width: 750px) {
+@media all and (max-width: 750px) {
   .neumorphic-tab-container {
     padding: 20px;
+    height: 95%;
     &__controls {
       &__control_inactive {
         font-size: 0.7em;
@@ -132,26 +136,37 @@
       }
     }
     &__tab_active {
-      justify-content: center;
+      justify-content: flex-start;
       border-radius: 15px;
-      padding: 15px;
+      padding: 25px 15px;
     }
     .text {
       h2 {
         font-size: 20px;
+        margin-bottom: 10px;
       }
       p {
-        padding-top: 3vw;
         font-size: 0.8em;
       }
     }
   }
 }
 
-@media (max-width: 360px) {
+@media all and (max-width: 450px) and (min-height: 700px) {
+  .neumorphic-tab-container {
+    height: 75%;
+  }
+}
+
+@media all and (max-width: 360px) {
   .neumorphic-tab-container {
     &__controls {
       width: fit-content;
+    }
+    .text {
+      h2 {
+        font-size: 15px;
+      }
     }
   }
 }

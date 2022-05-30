@@ -139,7 +139,9 @@
   }
 }
 
-@media (min-width: 1300px) {
+// RESPONSIVE
+
+@media all and (min-width: 1300px) {
   .list {
     li {
       top: -320px;
@@ -147,16 +149,16 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media all and (max-width: 1050px) {
   .list {
     li {
-      top: -30px;
+      top: -20px;
       left: -230px;
     }
   }
 }
 
-@media (max-width: 500px) {
+@media all and (max-width: 500px) {
   .skillslist {
     transform: scale(0.55);
     .list {
