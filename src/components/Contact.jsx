@@ -38,7 +38,10 @@ const Contact = () => {
           </div>
           {!finalName ? (
             <div className="contact__content__text__form">
-              <form>
+              <form
+                onSubmit={!name ? ((e) => {
+                  e.preventDefault()}) : () => setFinalName(name)}
+              >
                 <div className="contact__content__text__form__outer">
                   <div className="contact__content__text__form__outer__inner">
                     <div>What&apos;s your name ?</div>
@@ -48,9 +51,7 @@ const Contact = () => {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
-                    <a href="#thanks" onClick={() => setFinalName(name)}>
-                      Submit
-                    </a>
+                    <button type="submit">Submit</button>
                   </div>
                 </div>
               </form>
