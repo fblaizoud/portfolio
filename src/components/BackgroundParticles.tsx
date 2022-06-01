@@ -1,6 +1,5 @@
-/* eslint-disable no-undef */
-
-import { useEffect } from "react";
+import Particles from "particlesjs";
+import React, { useEffect } from "react";
 
 const BackgroundParticles = () => {
   useEffect(() => {

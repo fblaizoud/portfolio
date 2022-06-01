@@ -1,3 +1,5 @@
+import React from "react";
+
 import ButtonFb from "./ButtonFb";
 
 const About = () => {

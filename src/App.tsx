@@ -1,12 +1,15 @@
 import "./App.scss";
-import BackgroundParticles from "./components/BackgroundParticles";
-import ScrollButton from "./components/ScrollButton";
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
+
+import React from "react";
+
 import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import BackgroundParticles from "./components/BackgroundParticles";
 import Contact from "./components/Contact";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import ScrollButton from "./components/ScrollButton";
+import Skills from "./components/Skills";
 
 function App() {
   return (
