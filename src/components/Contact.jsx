@@ -39,8 +39,13 @@ const Contact = () => {
           {!finalName ? (
             <div className="contact__content__text__form">
               <form
-                onSubmit={!name ? ((e) => {
-                  e.preventDefault()}) : () => setFinalName(name)}
+                onSubmit={
+                  !name
+                    ? (e) => {
+                        e.preventDefault();
+                      }
+                    : () => setFinalName(name)
+                }
               >
                 <div className="contact__content__text__form__outer">
                   <div className="contact__content__text__form__outer__inner">
