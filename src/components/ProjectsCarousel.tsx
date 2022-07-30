@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import projets from "../../data/projets";
 
+import projets from "../../data/projets";
 import ButtonFb from "./ButtonFb";
 
 const ProjectsCarousel = () => {
@@ -28,7 +28,14 @@ const ProjectsCarousel = () => {
           <span
             id="moveLeft"
             className="carouselContainer__carousel__nav__arrow"
+            role="button"
+            tabIndex={0}
             onClick={() =>
+              itemSlected !== 0
+                ? setItemSelected(itemSlected - 1)
+                : setItemSelected(projets.length - 1)
+            }
+            onKeyDown={() =>
               itemSlected !== 0
                 ? setItemSelected(itemSlected - 1)
                 : setItemSelected(projets.length - 1)
@@ -46,7 +53,14 @@ const ProjectsCarousel = () => {
           <span
             id="moveRight"
             className="carouselContainer__carousel__nav__arrow"
+            role="button"
+            tabIndex={0}
             onClick={() =>
+              itemSlected !== projets.length - 1
+                ? setItemSelected(itemSlected + 1)
+                : setItemSelected(0)
+            }
+            onKeyDown={() =>
               itemSlected !== projets.length - 1
                 ? setItemSelected(itemSlected + 1)
                 : setItemSelected(0)
