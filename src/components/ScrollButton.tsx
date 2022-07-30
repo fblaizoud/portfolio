@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const ScrollButton = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };

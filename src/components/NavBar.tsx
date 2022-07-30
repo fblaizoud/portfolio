@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
@@ -14,7 +14,7 @@ const NavBar = () => {
     };
   }, []);
 
-  const [menuBtnClicked, setMenuBtnClicked] = useState(false);
+  const [menuBtnClicked, setMenuBtnClicked] = useState<boolean>(false);
   const handleClick = () => {
     setMenuBtnClicked(!menuBtnClicked);
   };

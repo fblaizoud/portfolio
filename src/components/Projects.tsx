@@ -1,6 +1,5 @@
 import React from "react";
-
-import ProjectsList from "./ProjectsList";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 const Projects = () => {
   return (
@@ -10,7 +9,7 @@ const Projects = () => {
           <span>My Projects</span>
         </div>
         <div className="projects__content__details">
-          <ProjectsList />
+          <ProjectsCarousel />
         </div>
       </div>
     </section>

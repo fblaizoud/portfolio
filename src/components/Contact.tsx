@@ -5,8 +5,8 @@ import ButtonFb from "./ButtonFb";
 const Contact = () => {
   const year = new Date();
   const currentYear = year.getFullYear();
-  const [name, setName] = useState("");
-  const [finalName, setFinalName] = useState("");
+  const [name, setName] = useState<string>("");
+  const [finalName, setFinalName] = useState<string>("");
 
   return (
     <footer className="contact" id="contact">
